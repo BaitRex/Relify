@@ -1,0 +1,68 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <ApplicationIcon>appico.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="close.png" />
+    <None Remove="Fonts\Dosis.ttf" />
+    <None Remove="highmusic.png" />
+    <None Remove="lowmusic.png" />
+    <None Remove="mediummusic.png" />
+    <None Remove="minus.png" />
+    <None Remove="mutedmusic-no-outline.png" />
+    <None Remove="MVVM\View\download-finished.png" />
+    <None Remove="MVVM\View\download.png" />
+    <None Remove="MVVM\View\loading-cropped.gif" />
+    <None Remove="MVVM\View\playbutton.png" />
+    <None Remove="MVVM\View\stopbutton.png" />
+    <None Remove="nextmusic.png" />
+    <None Remove="playbutton.png" />
+    <None Remove="previousmusic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appico.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.2.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="taglib-sharp-netstandard2.0" Version="2.1.0" />
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+    <PackageReference Include="YoutubeExplode" Version="6.3.14" />
+    <PackageReference Include="YoutubeExplode.Converter" Version="6.3.14" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="close.png" />
+    <Resource Include="Fonts\Dosis.ttf" />
+    <Resource Include="highmusic.png" />
+    <Resource Include="lowmusic.png" />
+    <Resource Include="mediummusic.png" />
+    <Resource Include="minus.png" />
+    <Resource Include="mutedmusic-no-outline.png" />
+    <Resource Include="MVVM\View\download-finished.png" />
+    <Resource Include="MVVM\View\download.png" />
+    <Resource Include="MVVM\View\loading-cropped.gif" />
+    <Resource Include="MVVM\View\playbutton.png" />
+    <Resource Include="MVVM\View\stopbutton.png" />
+    <Resource Include="nextmusic.png" />
+    <Resource Include="playbutton.png" />
+    <Resource Include="previousmusic.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ffmpeg.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
